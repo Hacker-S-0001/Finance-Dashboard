@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" class="light">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Editorial Ledger | Overview</title>
+    
+    <!-- Material Symbols -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+    <!-- Tailwind Play CDN for quick setup matching previous HTML -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#000000",
+                        "on-primary-fixed": "#1a1930",
+                        "surface-dim": "#dbd8e7",
+                        "on-error": "#ffffff",
+                        "on-surface": "#1b1b25",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary": "#006c49",
+                        "on-background": "#1b1b25",
+                        "surface-tint": "#5d5c76",
+                        "surface-container-highest": "#e4e1ef",
+                        "on-tertiary-fixed-variant": "#92002a",
+                        "tertiary-container": "#40000d",
+                        "inverse-on-surface": "#f2effe",
+                        "secondary-fixed-dim": "#4edea3",
+                        "inverse-primary": "#c7c3e2",
+                        "inverse-surface": "#302f3a",
+                        "on-secondary-fixed-variant": "#005236",
+                        "surface-container-low": "#f5f2ff",
+                        "surface-container": "#efecfb",
+                        "on-tertiary": "#ffffff",
+                        "on-primary-fixed-variant": "#46445d",
+                        "tertiary-fixed-dim": "#ffb2b7",
+                        "on-surface-variant": "#47464d",
+                        "primary-container": "#1a1930",
+                        "on-primary-container": "#83819d",
+                        "surface-variant": "#e4e1ef",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#40000d",
+                        "on-secondary-container": "#00714d",
+                        "surface-bright": "#fcf8ff",
+                        "error": "#ba1a1a",
+                        "background": "#fcf8ff",
+                        "outline-variant": "#c8c5cd",
+                        "secondary-container": "#6cf8bb",
+                        "outline": "#78767d",
+                        "surface": "#fcf8ff",
+                        "on-tertiary-container": "#f23d5c",
+                        "on-secondary-fixed": "#002113",
+                        "surface-container-high": "#e9e6f5",
+                        "tertiary-fixed": "#ffdadb",
+                        "tertiary": "#000000",
+                        "error-container": "#ffdad6",
+                        "primary-fixed-dim": "#c7c3e2",
+                        "primary-fixed": "#e3dffe",
+                        "secondary-fixed": "#6ffbbe",
+                        "on-primary": "#ffffff",
+                        "on-secondary": "#ffffff"
+                    },
+                    fontFamily: {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Manrope', sans-serif; }
+    </style>
+  </head>
+  <body class="bg-surface text-on-surface selection:bg-primary-fixed">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
